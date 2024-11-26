@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Rosa-claro: rgba(247, 231, 220, 1);
+    --Azul-escuro: rgba(64, 93, 114, 1);
+    --Azul-escuro-claro: rgba(72, 101, 121, 1);
+    --Braco-escuro: rgba(255, 248, 243, 1);
+    --Azul-cinza: rgba(154, 171, 185, 1);
+    --Amarelo: rgba(211, 151, 47, 1);
+    --Azul-escuro-cima: rgba(64, 93, 114, 0.564);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #507291;
+    color: #fff;
+    height: 10vh;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 90vh;
+}
+
+.notification {
+    background-color: #2b4f6c;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.notification h2 {
+    margin: 2rem;
+    margin-top: -1rem;
+}
+
+.notification ul {
+    list-style: none;
+    padding: 20px;
+    background-color: #fff;
+    color: #2b4f6c;
+    border-radius: 10px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notification div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.notification li {
+    border-bottom: 1px solid rgb(142, 142, 142);
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background-color: #2b4f6c;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn img{
+    width: 1rem;
+    margin: 1rem;
+}
+
+.btn:hover {
+    background-color: #415d79;
+}
+
+.welcome h1{
+    display: flex;
+    font-family: 1rem;
+}
+.welcome h1 p{
+    margin-left: 0.5ch;
+    margin-right: 0.5ch;
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Rosa-claro: rgba(247, 231, 220, 1);
+    --Azul-escuro: rgba(64, 93, 114, 1);
+    --Azul-escuro-claro: rgba(72, 101, 121, 1);
+    --Braco-escuro: rgba(255, 248, 243, 1);
+    --Azul-cinza: rgba(154, 171, 185, 1);
+    --Amarelo: rgba(211, 151, 47, 1);
+    --Azul-escuro-cima: rgba(64, 93, 114, 0.564);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #507291;
+    color: #fff;
+    height: 10vh;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Botões de controle */
+  .controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: var(--Azul-escuro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Caixa de convidados */
+  .guest-box {
+    width: 100%;
+    max-width: 500px;
+    background: var(--Azul-escuro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .guest-box h2 {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  /* Lista de convidados */
+  #guest-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .guest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .guest-item:last-child {
+    border-bottom: none;
+  }
+  
+  .guest-item span {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .guest-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .guest-item button:hover {
+    background-color: #218838;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 15px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #modal-save {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  #modal-save:hover {
+    background-color: #0056b3;
+  }
+  
+  #modal-cancel {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  #modal-cancel:hover {
+    background-color: #a71d2a;
+  }
+
+  .info-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: var(--Azul-escuro);
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 20px;
+    font-weight: bold;
+}

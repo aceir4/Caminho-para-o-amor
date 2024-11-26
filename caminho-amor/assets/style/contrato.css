@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Rosa-claro: rgba(247, 231, 220, 1);
+    --Azul-escuro: rgba(64, 93, 114, 1);
+    --Azul-escuro-claro: rgba(72, 101, 121, 1);
+    --Braco-escuro: rgba(255, 248, 243, 1);
+    --Azul-cinza: rgba(154, 171, 185, 1);
+    --Amarelo: rgba(211, 151, 47, 1);
+    --Azul-escuro-cima: rgba(64, 93, 114, 0.564);
+}
+
+.principal{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #507291;
+    color: #fff;
+    height: 10vh;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Container de botões */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo dos botões */
+  .category-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--Azul-escuro);
+    color: var(--Braco-escuro);
+    border: none;
+    margin: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .category-btn img{
+    width: 4rem;
+  }
+  
+  .category-btn:hover {
+    background-color: var(--Azul-escuro-cima);
+  }
+  
+  /* Estilo do Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Conteúdo do Modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  /* Fechar modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Lista de empresas */
+  #companies-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #companies-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #companies-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #companies-list h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  #companies-list p {
+    color: #555;
+  }

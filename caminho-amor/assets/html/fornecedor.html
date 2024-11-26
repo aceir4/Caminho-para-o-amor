@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminho para o amor - Fornecedor</title>
+    <link rel="stylesheet" href="../style/fornecedor.css">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <div class="logo">
+            <a href="./inicial.html"><img src="../images/logo-removebg-preview.png" alt="" srcset=""></a>
+        </div>
+        <div class="welcome">
+            <h1 style="font-size: 20px;" id="nomeTelaInicial">Olá! seja bem vindo(a) ao nosso site.</h1>
+        </div>
+        <div class="profile-icon">
+            <a href="../../index.html"><img src="../images/user.png" alt="Ícone de Perfil"></a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Painel de informações -->
+        <section class="info-panel">
+            <div class="info-item">
+                <h3>Total de Convidados</h3>
+                <p id="total-guests">0</p>
+            </div>
+            <div class="info-item">
+                <h3>Confirmados</h3>
+                <p id="confirmed-guests">0</p>
+            </div>
+            <div class="info-item">
+                <h3>Desistentes</h3>
+                <p id="declined-guests">0</p>
+            </div>
+        </section>
+
+        <main>
+            <div class="controls">
+                <button id="btn-add-guest">Adicionar Convidado</button>
+                <button id="btn-remove-guest">Remover Convidado</button>
+            </div>
+
+            <section class="guest-box">
+                <h2>Lista de Convidados</h2>
+                <ul id="guest-container">
+                    <!-- Lista de convidados será gerada dinamicamente -->
+                </ul>
+            </section>
+        </main>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h3 id="modal-title">Adicionar Convidado</h3>
+                <input type="text" id="modal-input" placeholder="Digite o nome" />
+                <div class="modal-buttons">
+                    <button id="modal-save">Salvar</button>
+                    <button id="modal-cancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../script/fornecedor.js"></script>
+</body>
+
+</html>

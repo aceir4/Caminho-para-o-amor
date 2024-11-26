@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Rosa-claro: rgba(247, 231, 220, 1);
+    --Azul-escuro: rgba(64, 93, 114, 1);
+    --Azul-escuro-claro: rgba(72, 101, 121, 1);
+    --Braco-escuro: rgba(255, 248, 243, 1);
+    --Azul-cinza: rgba(154, 171, 185, 1);
+    --Amarelo: rgba(211, 151, 47, 1);
+    --Azul-escuro-cima: rgba(64, 93, 114, 0.564);
+}
+
+body {
+    background-color: var(--Rosa-claro);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0 0px 30px;
+}
+
+
+.tudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90%;
+    background-color: var(--Azul-escuro);
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.img-btn-1 {
+    width: 1rem;
+    margin: 0.3rem;
+}
+
+.btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 14px;
+    width: 300px;
+    background-color: white;
+    margin: 0.5rem;
+}
+
+.cal-tel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 14px;
+    width: 300px;
+    background-color: white;
+    margin: 0.5rem;
+
+}
+
+.img-btn-2 {
+    width: 1.2rem;
+    margin: 0.3rem;
+}
+
+.btn-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 14px;
+    width: 300px;
+    margin: 0.5rem;
+
+}
+
+.img-btn-3 {
+    width: 1rem;
+    margin: 0.3rem;
+    margin-top: -0.1rem;
+}
+
+.em{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.subtitulo {
+    margin: 0.5rem;
+    color: var(--Braco-escuro);
+    font-size: 12px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    position: relative;
+    left: 10px;
+    height: 30px;
+    padding: 10px;
+    background-color: var(--Braco-escuro);
+    border: none;
+    border-radius: 10px;
+}
+
+.sub {
+    font-size: 12px;
+    color: black;
+    position: relative;
+    margin: 1rem;
+}
+
+.btnEscolha{
+    padding: 10px;
+    background-color: white;
+    color: var(--Azul-escuro);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.selecionado{
+    border: 1px solid black;
+    background-color: var(--Azul-escuro);
+    color: white;
+}
+
+#labelEmail{
+    margin: 1rem;
+    color: var(--Braco-escuro);
+}
+
+.buttonsBox{
+    display: flex;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.entrar {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--Braco-escuro);
+    color: var(--Azul-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    margin: 1rem;
+}
+
+.link:link,
+.link:visited {
+    color: var(--Azul-escuro);
+}
+
+.senha:link,
+.senha:visited {
+    color: var(--Amarelo);
+}
+
+.informar{
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+@media (min-width: 1400px) {
+
+    .tudo{
+        height: 60%;
+    }
+    
+}

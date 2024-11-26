@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminho para o amor- Calendario</title>
+    <link rel="stylesheet" href="../style/calendario.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="./inicial.html"><img src="../images/logo-removebg-preview.png" alt="" srcset=""></a>
+        </div>
+        <div class="welcome">
+            <h1 style="font-size: 20px;" id="nomeTelaInicial">Olá! seja bem vindo(a) ao nosso site.</h1>
+        </div>
+        <div class="profile-icon">
+            <a href="../../index.html"><img src="../images/user.png" alt="Ícone de Perfil"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="calendar">
+            <header>
+                <button id="prev-month">&lt;</button>
+                <h2 id="month-year">Mês e Ano</h2>
+                <button id="next-month">&gt;</button>
+            </header>
+            <div class="weekdays">
+                <span>dom</span>
+                <span>seg</span>
+                <span>ter</span>
+                <span>qua</span>
+                <span>qui</span>
+                <span>sex</span>
+                <span>sáb</span>
+            </div>
+            <div id="days-container" class="days"></div>
+        </div>
+    
+        <aside class="sidebar">
+            <h3>Lembretes</h3>
+            <button id="add-event">+ Novo Lembrete</button>
+            <div id="events-container">
+                <!-- Eventos dinâmicos serão adicionados aqui -->
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Adicionar Evento</h3>
+            <input type="text" id="event-title" placeholder="Digite o nome do evento">
+            <button id="save-event">Salvar</button>
+            <button id="cancel-event">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="../script/calendario.js"></script>
+</body>
+
+</html>
